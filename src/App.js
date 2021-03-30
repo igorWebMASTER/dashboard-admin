@@ -2,6 +2,7 @@ import { useState } from 'react';
 import DashboardMenu from './components/DashboardMenu';
 import DashboardContent from './components/DashboardContent';
 import Navbar from './components/NavBar';
+import Sidebar from './components/Sidebar';
 
 function App() {
   const [openMenuDashboard, setOpenMenuDashboard ] = useState(false);
@@ -16,8 +17,9 @@ function App() {
 
   return (
     <div className="container">
-      <Navbar sidebarOpen={openSidebar} openSidebar={openSidebar} />
-      <h1>Rect dashboard</h1>
+      <Navbar  />
+      <DashboardMenu />
+      <DashboardContent />
     </div>
   );
 }

@@ -1,46 +1,34 @@
 import {ContainerNavbar} from './style';
+import {FaBell, FaSearch, FaHamburger} from 'react-icons/fa';
 
-import Avatar  from 'avataaars';
+import AvatarMaker from '../../assets/AvatarMaker.svg';
 
-const Navbar = ({sidebarOpen, openSidebar}) => {
+const Navbar = ({sidebarOpen, openMenuDashboard}) => {
     return (
       <ContainerNavbar>
-          <div className="nav_icon" onClick={() =>  openSidebar()}>
-            <i className="fa fa-bars"></i>
+          <div className={openMenuDashboard && 'block'} onClick={() =>  openMenuDashboard()}>
+             <FaHamburger />
           </div>
 
           <div className="navbar__left">
-            <a href="//#endregion">Recargas</a>
-            <a href="@">Subscribers</a>
-            <a href="@" className="active_link">Ativações</a>
+            <a href="//#endregion">Overview</a>
+            {/* <a href="@">Subscribers</a>
+            <a href="@" className="active_link">Ativações</a> */}
           </div>
-
           <div className="navbar__right">
+            <div className="navbar__center">
+              <span> 
+                <FaSearch color="#C5C7CD" />
+              </span>
+              <span>
+                <FaBell color="#C5C7CD" />
+              </span>
+            </div>   
+
+
+            <span>Jones Ferdinan</span>
             <a href="">
-              <i className="fa fa-search"></i>
-            </a>
-            <a href="">
-              <i className="fa fa-search"></i>
-            </a>
-            <a href="">
-              <i className="fa fa-clock-0"></i>
-            </a>
-            <a href="">
-              <Avatar
-                avatarStyle='Circle'
-                topType='ShortHairShortWaved'
-                accessoriesType='Prescription01'
-                hairColor='Platinum'
-                facialHairType='BeardMedium'
-                facialHairColor='Brown'
-                clotheType='ShirtScoopNeck'
-                clotheColor='PastelBlue'
-                eyeType='Surprised'
-                eyebrowType='UpDownNatural'
-                mouthType='Tongue'
-                skinColor='Pale'
-                width={30}
-              />
+                <img src={AvatarMaker} alt="" width="30"/>
             </a>
           </div>
       </ContainerNavbar>

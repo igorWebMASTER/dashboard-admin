@@ -1,27 +1,28 @@
 import React from 'react'
 
 import { ContainerMenu, ContentMenu } from './style';
-import {FaRocket } from 'react-icons/fa'
+import {FaRocket, FaTicketAlt } from 'react-icons/fa'
+import {AiFillPieChart} from 'react-icons/ai'
 
 export default function index() {
   return (
     <ContainerMenu>
       <ContentMenu>
         <div className="menu">
-            <img src="https://pagtel.com.br/img/logo_pagtel.png" alt=""/> DashboardMenu
+            <img src="https://pagtel.com.br/img/logo_pagtel.png" alt=""/> Dashboard
         </div>
 
           <div>
-            <img src={FaRocket} alt=""/> Overview
+            <AiFillPieChart color="#a5aaad"/> <span> Overview</span>
           </div>
           <div>
-            <img src="" alt=""/> Recargas
+            <FaTicketAlt color="#a5aaad"/> <img src="" alt=""/> <span>Recargas</span>
           </div>
           <div>
-            <img src="" alt=""/> Portabilidade
+            <AiFillPieChart color="#a5aaad"/> <img src="" alt=""/> <span>Portabilidade</span>
           </div>
           <div>
-            <img src="" alt=""/> Ativação
+            <AiFillPieChart color=" #a5aaad"/> <img src="" alt=""/> <span>Ativação</span>
           </div>
       </ContentMenu>
     </ContainerMenu>
