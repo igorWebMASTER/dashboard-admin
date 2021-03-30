@@ -5,8 +5,18 @@ export const ContainerMenu = styled.div`
   max-width:20rem;
   background: var(--gray-700);
   color:#fff;
+  grid-area: b;
+  overflow-y: auto;
+  transition: all 0.2;
+  z-index:99999;
+  position: absolute;
 
+  .block{
+    display: block !important;
+  }
 `;
+
+
 
 export const ContentMenu = styled.div`
   display: flex;
@@ -28,6 +38,10 @@ export const ContentMenu = styled.div`
     img{
       max-width:100px;
     }
+  }
+
+  span{
+    margin-left: 1rem;
   }
 `;
 

@@ -38,7 +38,7 @@ export const GlobalStyles =  createGlobalStyle`
     }
 
     body{
-      font-family: "Lato", sans-serif;
+      font-family: "Mulish", sans-serif;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
     }
@@ -76,11 +76,10 @@ export const GlobalStyles =  createGlobalStyle`
     .container{
       display: grid;
       height: 100vh;
-      grid-template-columns: 0.8fr 1fr 1fr 1fr;
-      grid-template-rows: 0.2fr 3fr;
-      grid-template-areas:
-      "sidebar nav nav nav",
-      "sidebar nav nav nav"
+      grid-template: 
+            "b b a" auto
+            "b b c" 2ch
+            "b b c" 1em / 20% 20px 1fr;
     }
 
 
