@@ -9,6 +9,7 @@ export const ContainerMenu = styled.div`
   overflow-y: auto;
   transition: all 0.2;
   z-index:99999;
+<<<<<<< HEAD
   position: sticky;
 
 
@@ -21,6 +22,16 @@ export const ContainerMenu = styled.div`
 `;
 
  
+=======
+  position: absolute;
+
+  .block{
+    display: block !important;
+  }
+`;
+
+
+>>>>>>> d621ac1bff4e7e2b6ee0a1bbd26f373ec56a69f4
 
 export const ContentMenu = styled.div`
   display: flex;

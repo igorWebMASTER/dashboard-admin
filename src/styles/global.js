@@ -44,9 +44,7 @@ export const GlobalStyles = createGlobalStyle`
       background:#F7F8FC;
     }
 
-    .text-label{
-      font-size:1rem;
-    }
+    
 
     .text-primary{
       color: #a5aaad;
