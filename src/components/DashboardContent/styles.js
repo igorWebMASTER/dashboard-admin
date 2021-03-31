@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const ContainerDashboard = styled.div`
   grid-area:a;
   height: 100%;
+  width: 100%;
   
   span:first-of-type{
     font-size: 1.5rem;
@@ -21,7 +22,6 @@ export const CardsInfoContainer = styled.div`
   display: flex;
   align-items:center;
   justify-content: space-between;
-  padding: 1rem;
   flex-wrap: wrap;
   transition: all 200ms;
 
@@ -57,18 +57,20 @@ export const CardsInfoContainer = styled.div`
 `;
 
 export const MainCharts = styled.div`
-  width: 95%;
+  width: 98%;
   margin:0 auto;
-  height: 35rem;
+  height: auto;
+  background:#fff;
   display: flex;
   border: 1px solid #DFE0EB;
   border-radius: 8px;
   margin-top:2rem;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 
   > .chart-graph{
     width:75%;
     margin: 1rem 1rem;
+    flex: 1;
   }
 
   > .chart-graph > span{
@@ -76,16 +78,18 @@ export const MainCharts = styled.div`
   }
 
   .info-charts{
+    
     border-left: 1px solid #DFE0EB;
-    width:19%;
-    margin-left: 1rem;
+    width:22%;
+    flex: 1;
     height: 100%;
     display: flex;
-    margin: auto 0;
+    /* margin: auto 0; */
     text-align: center;
     flex-direction:column;
     align-items:center;
     justify-content: space-between;
+    flex-wrap:nowrap;
 
     + div{
       margin-top: 1rem;
@@ -94,9 +98,50 @@ export const MainCharts = styled.div`
     div{
       width: 100%;
       height: 4rem;
-      line-height:2rem;
+      line-height:3rem;
       border-bottom: 1px solid #DFE0EB;
+      flex: 1 1 110px;
+    }
+
+    div:last-child{
+      border-bottom: 0px;
     }
   }
+
+`;
+
+export const ContentUsers = styled.div`
+  width: 98%;
+  margin:0 auto;  
+  height: auto;
+  display: flex;
+  margin-top:2rem;
+  flex-wrap: nowrap;
+
+  .content-users-left{
+    flex: 1 1 32rem;
+    width: 45%;
+    background:#fff;
+    border-radius: 8px;
+    height: 20rem;
+    border: 1px solid #DFE0EB;
+    padding-left: 10px;
+    padding: 1.5rem;
+  }
+
+
+  .content-users-right{
+    flex: 1 1 28rem;
+    width: 45%;
+    height: 20rem;
+    border: 1px solid #DFE0EB;
+    border-radius: 8px;
+    background:#fff;
+    margin-left: 2rem;
+    padding: 1.5rem;
+
+  }
+
+  
 
 `;

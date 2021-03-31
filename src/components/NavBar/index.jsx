@@ -6,9 +6,9 @@ import AvatarMaker from '../../assets/AvatarMaker.svg';
 const Navbar = ({sidebarOpen, openMenuDashboard}) => {
     return (
       <ContainerNavbar>
-          <div className={openMenuDashboard && 'block'} onClick={() =>  openMenuDashboard()}>
+          {/* <div className={openMenuDashboard && 'block'} onClick={() =>  openMenuDashboard()}>
              <FaHamburger />
-          </div>
+          </div> */}
 
           <div className="navbar__left">
             <a href="//#endregion">Overview</a>

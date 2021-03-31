@@ -13,16 +13,28 @@ export default function index() {
         </div>
 
           <div>
-            <AiFillPieChart color="#a5aaad"/> <span> Overview</span>
+            <AiFillPieChart color="#a5aaad"/><span>Overview</span>
           </div>
           <div>
-            <FaTicketAlt color="#a5aaad"/> <img src="" alt=""/> <span>Recargas</span>
+            <FaTicketAlt color="#a5aaad"/> <img src="" alt=""/><span>Recargas</span>
           </div>
           <div>
-            <AiFillPieChart color="#a5aaad"/> <img src="" alt=""/> <span>Portabilidade</span>
+            <AiFillPieChart color="#a5aaad"/> <img src="" alt=""/><span>Portabilidade</span>
           </div>
           <div>
-            <AiFillPieChart color=" #a5aaad"/> <img src="" alt=""/> <span>Ativação</span>
+            <AiFillPieChart color=" #a5aaad"/> <img src="" alt=""/><span>Ativação</span>
+          </div>
+          <div>
+            <AiFillPieChart color="#a5aaad"/> <span>Overview</span>
+          </div>
+          <div>
+            <FaTicketAlt color="#a5aaad"/> <img src="" alt=""/><span>Recargas</span>
+          </div>
+          <div>
+            <AiFillPieChart color="#a5aaad"/> <img src="" alt=""/><span>Portabilidade</span>
+          </div>
+          <div>
+            <AiFillPieChart color=" #a5aaad"/> <img src="" alt=""/><span>Ativação</span>
           </div>
       </ContentMenu>
     </ContainerMenu>

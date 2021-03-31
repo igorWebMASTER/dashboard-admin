@@ -5,23 +5,23 @@ import Navbar from './components/NavBar';
 import Sidebar from './components/Sidebar';
 
 function App() {
-  const [openMenuDashboard, setOpenMenuDashboard ] = useState(false);
+    const [openMenuDashboard, setOpenMenuDashboard] = useState(false);
 
-  const openSidebar =  () => {
-    setOpenMenuDashboard(true);
-  }
+    const openSidebar = () => {
+        setOpenMenuDashboard(true);
+    };
 
-  const closeSidebar = () => {
-    setOpenMenuDashboard(false);
-  }
+    const closeSidebar = () => {
+        setOpenMenuDashboard(false);
+    };
 
-  return (
-    <div className="container">
-      <Navbar  />
-      <DashboardMenu />
-      <DashboardContent />
-    </div>
-  );
+    return (
+        <div className="container">
+            <Navbar />
+            <DashboardMenu />
+            <DashboardContent />
+        </div>
+    );
 }
 
 export default App;

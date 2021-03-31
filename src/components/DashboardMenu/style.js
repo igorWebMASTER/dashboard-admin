@@ -9,21 +9,25 @@ export const ContainerMenu = styled.div`
   overflow-y: auto;
   transition: all 0.2;
   z-index:99999;
-  position: absolute;
+  position: sticky;
 
-  .block{
-    display: block !important;
+
+  @media screen and (max-width: 576px){
+    &  {
+      display: none !important;
+    }
   }
+  
 `;
 
-
+ 
 
 export const ContentMenu = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   color: #A4A6B3;
-  padding: 2rem 3rem; 
+  padding: 1rem 2rem; 
 
   line-height:4rem;
   text-align: left;

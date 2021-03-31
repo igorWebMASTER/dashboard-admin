@@ -1,7 +1,7 @@
 import React from 'react';
 
 import MultiAxisLine from './Charts/main'
-import { ContainerDashboard , CardsInfoContainer, MainCharts} from './styles';
+import { ContainerDashboard ,  ContentUsers , CardsInfoContainer, MainCharts} from './styles';
 
 function DashboardContent() {
   return (
@@ -28,7 +28,7 @@ function DashboardContent() {
             <MainCharts >
               <div className="chart-graph"> 
                 <h3>Todays trends</h3>  <br/>
-                <h6>as of 25 May 2019, 09:41 PM</h6>
+                <p>as of 25 May 2019, 09:41 PM</p>
                 <MultiAxisLine />
               </div>
               <div className="info-charts">
@@ -47,7 +47,6 @@ function DashboardContent() {
                 <div>
                   <h4>Average response time</h4>
                   <span>3h 8m</span>
-                  <span>3h 8m</span>
                 </div>
                 <div>
                   <h4>Resolution within SLA</h4>
@@ -56,7 +55,17 @@ function DashboardContent() {
               </div>
             </MainCharts>
 
-          
+            <ContentUsers>
+              <div className="content-users-left">
+                  <h2>Unsolved</h2>
+                  <span className="text-primary">Group</span> <span>Suport</span>
+              </div>
+
+              <div className="content-users-right">
+                  <span>Unsolved</span>
+                  <span className="text-primary">60</span>
+              </div>
+            </ContentUsers>
         </ContainerDashboard>
     
         </>

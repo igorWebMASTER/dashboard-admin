@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
-export const GlobalStyles =  createGlobalStyle`
+export const GlobalStyles = createGlobalStyle`
     *{
       margin:0;
       padding:0;
@@ -41,6 +41,11 @@ export const GlobalStyles =  createGlobalStyle`
       font-family: "Mulish", sans-serif;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
+      background:#F7F8FC;
+    }
+
+    .text-label{
+      font-size:1rem;
     }
 
     .text-primary{
@@ -91,4 +96,3 @@ export const GlobalStyles =  createGlobalStyle`
       }
     }
 `;
-
