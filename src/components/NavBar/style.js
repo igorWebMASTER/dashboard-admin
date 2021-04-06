@@ -3,10 +3,13 @@ import styled from "styled-components";
 export const ContainerNavbar = styled.nav`
   grid-area:a;
   height: 60px;
+  max-width:93%;
+  width: 90%;
   display: flex;
+  margin:0 auto;
   align-items:center;
   justify-content: space-between;
-  padding: 0 30px 0 30px;
+  padding: 0 3rem 0 0rem;
   
   .nav_icon{
     display: none;
@@ -20,8 +23,8 @@ export const ContainerNavbar = styled.nav`
   .navbar__left > a{
     margin-right: 30px;
     text-decoration:none;
-    color: #a5aaad;
-    font-size: 16px;
+    color: #252733;
+    font-size: 1.5rem;
     font-weight: 700;
   }
 
@@ -58,11 +61,29 @@ export const ContainerNavbar = styled.nav`
 
   .navbar__center{
     margin-right: 2rem;
+    padding-right:2rem;
+    border-right: 1px solid #d9d9d9;
+    position: relative;
+
+    span > span.dot__notification{
+      height: 5px;
+      width: 5px;
+      background:#265acc;
+      border-radius: 50%;
+      position: absolute;
+      left:43%;
+      z-index: 9999;
+    }
+
   }
 
   .navbar__center span{
     margin-left: 1rem;
+    cursor: pointer;
+   
   }
+
+  
  
   @media screen  and ( max-width: 978px){
     .nav_icon{

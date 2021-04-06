@@ -44,11 +44,16 @@ export const GlobalStyles = createGlobalStyle`
       background:#F7F8FC;
     }
 
+    p{
+      margin-top:0.5rem;
+      margin-bottom:0.5rem;
+    }
+
     
 
     .text-primary{
       color: #a5aaad;
-      font-size: 1rem;
+      font-size: 0.8rem;
       font-weight: 700;
     }
 

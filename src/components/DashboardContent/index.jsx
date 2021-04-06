@@ -1,7 +1,11 @@
 import React from 'react';
 
-import MultiAxisLine from './Charts/main'
-import { ContainerDashboard ,  ContentUsers , CardsInfoContainer, MainCharts} from './styles';
+import { 
+    ContainerDashboard ,  
+    ContentUsers , 
+    CardsInfoContainer, 
+    MainCharts
+} from './styles';
 
 function DashboardContent() {
   return (
@@ -9,47 +13,47 @@ function DashboardContent() {
         <ContainerDashboard> 
           <CardsInfoContainer>
             <div>
-                <span>Unsolved</span>
+                <span>Recargas</span>
                 <span className="text-inner">60</span>
             </div>
             <div>
-                <span>Overdue</span>
+                <span>Portabilidade</span>
                 <span className="text-inner">43</span>
             </div>
             <div>
-                <span>Open</span>
+                <span>Ativações</span>
                 <span className="text-inner">16</span>
             </div>
             <div>
-                <span>On Hold</span>
+                <span>Em espera</span>
                 <span className="text-inner">64</span>
             </div>
             </CardsInfoContainer>
             <MainCharts >
               <div className="chart-graph"> 
-                <h3>Todays trends</h3>  <br/>
-                <p>as of 25 May 2019, 09:41 PM</p>
-                <MultiAxisLine />
+                <h3>Tendências de hoje</h3>  
+                <p className="text-primary">de 05 Jan 2021, 09:41 AM</p>
+                {/* <MultiAxisLine /> */}
               </div>
               <div className="info-charts">
                 <div>
-                  <h4>Resolved</h4>
+                  <h4>Resolvido</h4>
                   <span>449</span>
                 </div>
                 <div>
-                  <h4>Received</h4>
+                  <h4>Recebido</h4>
                   <span>426</span>
                 </div>
                 <div>
-                  <h4>Average first response time</h4>
+                  <h4>Média de tempo de retorno</h4>
                   <span>33m</span>
                 </div>
                 <div>
-                  <h4>Average response time</h4>
+                  <h4>Média de resposta</h4>
                   <span>3h 8m</span>
                 </div>
                 <div>
-                  <h4>Resolution within SLA</h4>
+                  <h4>Range de atuação</h4>
                   <span>94%</span>
                 </div>
               </div>
@@ -57,13 +61,90 @@ function DashboardContent() {
 
             <ContentUsers>
               <div className="content-users-left">
-                  <h2>Unsolved</h2>
-                  <span className="text-primary">Group</span> <span>Suport</span>
+                 <header>
+                   <div>
+                      <h2>Não resolvido</h2>
+                      <p className="text-primary">Grupo: <span>Suporte</span></p> 
+                    </div>
+
+                    <div>
+                      <a href="">Ver detalhes</a>
+                    </div>
+                  </header>
+                  
+                  <main>
+                    <div>
+                        Waiting on Feature Request <span>4238</span>
+                    </div>
+                    <div>
+                        Awaiting Customer Response <span>4238</span>
+                    </div>
+                    <div>
+                        Awaiting Developer Fix <span>4238</span>
+                    </div>
+                    <div>
+                        Pending <span>4238</span>
+                    </div>
+                  </main>
+
+
               </div>
 
               <div className="content-users-right">
-                  <span>Unsolved</span>
-                  <span className="text-primary">60</span>
+                <header>
+                   <div>
+                      <h2>Não resolvido</h2>
+                      <p className="text-primary">Grupo: <span>Suporte</span></p> 
+                    </div>
+
+                    <div>
+                      <a href="">Ver tudo</a>
+                    </div>
+                  </header>
+
+
+                  <main>
+                    <div>
+                      
+                      <span>  
+                        <input type="checkbox" name="1" id=""/> Waiting on Feature Request</span> 
+                        <span className="label-todo progress">urgent</span>
+                    
+                    </div>
+                    <div>
+                    <span>  
+                      <input type="checkbox" name="1" id=""/> Waiting on Feature Request</span> 
+                      <span className="label-todo done">done</span>
+
+                    </div>
+                    <div>
+                      <span>  <input type="checkbox" name="1" id=""/> Waiting on Feature Request</span> 
+                      <span className="label-todo progress">in progress</span>
+
+                    </div>
+                    <div>
+                      <span>  <input type="checkbox" name="1" id=""/> Waiting on Feature Request</span> 
+                      <span className="label-todo default">in progress</span>
+
+                    </div>
+                  </main>
+                
+              </div>
+            </ContentUsers>
+
+
+            <ContentUsers>
+              <div className="content-users-left">
+                 <header>
+                   <div>
+                      <h2>Não resolvido</h2>
+                      <p className="text-primary">Grupo: <span>Suporte</span></p> 
+                    </div>
+
+                    <div>
+                      <a href="">Ver detalhes</a>
+                    </div>
+                  </header>
               </div>
             </ContentUsers>
         </ContainerDashboard>

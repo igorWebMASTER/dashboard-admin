@@ -25,27 +25,27 @@ function Sidebar({sidebarOpen, closeSideBar} ) {
             </div>
             <div className="sidebar__link">
               <i className="fa fa-user-secret"></i>
-              <a href="">Admini managente</a>
+              <a href="">Admin</a>
             </div>
             <div className="sidebar__link">
               <i className="fa fa-building-to"></i>
-              <a href="">Company</a>
+              <a href="">Recargas</a>
             </div>
             <div className="sidebar__link">
               <i className="fa fa-wrench"></i>
-              <a href="">Employee</a>
+              <a href="">Ativação</a>
             </div>
             <div className="sidebar__link">
               <i className="fa fa-wrench"></i>
-              <a href="">Warehouse</a>
+              <a href="">Portabilidade</a>
             </div>
             <div className="sidebar__link">
               <i className="fa fa-question"></i>
-              <a href="">Contracts</a>
+              <a href="">Listas</a>
             </div>
             <div className="sidebar__link">
               <i className="fa fa-calendar-check-o"></i>
-              <a href="">Contracts</a>
+              <a href="">Exportações</a>
             </div>
           </div>
       </div>  

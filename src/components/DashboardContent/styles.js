@@ -3,7 +3,8 @@ import styled from 'styled-components';
 export const ContainerDashboard = styled.div`
   grid-area:a;
   height: 100%;
-  width: 100%;
+  max-width:95%;
+  
   
   span:first-of-type{
     font-size: 1.5rem;
@@ -18,8 +19,9 @@ export const ContainerDashboard = styled.div`
 `;
 
 export const CardsInfoContainer = styled.div`
-  margin-top:5rem;
   display: flex;
+  max-width:95%;
+  margin:4rem auto 0 auto;
   align-items:center;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -57,7 +59,8 @@ export const CardsInfoContainer = styled.div`
 `;
 
 export const MainCharts = styled.div`
-  width: 98%;
+  max-width:93%;
+
   margin:0 auto;
   height: auto;
   background:#fff;
@@ -97,10 +100,10 @@ export const MainCharts = styled.div`
 
     div{
       width: 100%;
-      height: 4rem;
-      line-height:3rem;
+      height: 2rem;
+      line-height:2.3rem;
       border-bottom: 1px solid #DFE0EB;
-      flex: 1 1 110px;
+      flex: 1 1 80px;
     }
 
     div:last-child{
@@ -111,7 +114,7 @@ export const MainCharts = styled.div`
 `;
 
 export const ContentUsers = styled.div`
-  width: 98%;
+  max-width: 93%;
   margin:0 auto;  
   height: auto;
   display: flex;
@@ -119,26 +122,155 @@ export const ContentUsers = styled.div`
   flex-wrap: nowrap;
 
   .content-users-left{
-    flex: 1 1 32rem;
+    flex: 1 1 50%;
     width: 45%;
     background:#fff;
     border-radius: 8px;
     height: 20rem;
     border: 1px solid #DFE0EB;
-    padding-left: 10px;
-    padding: 1.5rem;
+
+    header{
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding: 1.25rem;
+
+      span{
+        font-size: 0.8rem;
+        color:var(--gray-700)
+      }
+
+      a{
+        text-decoration:none;
+        font-weight: 400;
+        color:#3751FF;
+      }
+    }
+
+    main{
+      display: flex;
+      flex-direction: column;
+      width:100%;
+      flex-wrap: nowrap;
+
+      & > div{
+        border-bottom: 1px solid #DFE0EB;
+        padding-top: 0.4rem;
+        padding-bottom:0.4rem;
+        padding-left:1.25rem;
+        padding-right:1.25rem;
+
+
+        flex: 1 1 3.2rem;
+        display: flex;
+        align-items:center;
+        justify-content: space-between
+
+        
+      }
+
+      span{
+          font-size: 0.8rem;
+        }
+
+      & > div:last-child{
+        border-bottom:0;  
+      }
+    }
+
   }
 
 
   .content-users-right{
-    flex: 1 1 28rem;
+    flex: 1 1 50%;
     width: 45%;
     height: 20rem;
     border: 1px solid #DFE0EB;
     border-radius: 8px;
     background:#fff;
     margin-left: 2rem;
-    padding: 1.5rem;
+
+    header{
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding: 1.25rem;
+
+      span{
+        font-size: 0.8rem;
+        color:var(--gray-700)
+      }
+
+      a{
+        text-decoration:none;
+        font-weight: 400;
+        color:#3751FF;
+      }
+    }
+
+    main{
+      display: flex;
+      flex-direction: column;
+      width:100%;
+      flex-wrap: nowrap;
+
+      & > div{
+        border-bottom: 1px solid #DFE0EB;
+        padding-top: 0.4rem;
+        padding-bottom:0.4rem;
+        padding-left:1.25rem;
+        padding-right:1.25rem;
+
+
+        flex: 1 1 3.2rem;
+        display: flex;
+        align-items:center;
+        justify-content: space-between;
+
+        span input{
+          margin-right: 1rem;
+        }
+        span{
+          color:#343434;
+        }
+
+
+        .label-todo{
+          max-width: 10rem;
+          height: 1.5rem; 
+          padding: 0.5rem;
+          line-height: 1rem;
+          display: flex;
+          align-items:center;
+          border-radius: calc(1.5rem * 3);
+          color: #fff; 
+          text-transform:uppercase;
+
+        }
+
+
+        .progress{
+          background:#FEC400;
+        }
+
+        .done{
+          background:#29CC97;
+        }
+
+        .default{
+          background: #F0F1F7;
+          color:#9FA2B4;
+        }
+      }
+
+      span{
+          font-size: 0.8rem;
+        }
+
+      & > div:last-child{
+        border-bottom:0;  
+      }
+    }
 
   }
 
