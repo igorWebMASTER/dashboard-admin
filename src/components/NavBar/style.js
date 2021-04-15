@@ -3,13 +3,12 @@ import styled from "styled-components";
 export const ContainerNavbar = styled.nav`
   grid-area:a;
   height: 60px;
-  max-width:93%;
-  width: 90%;
+  width: 92%;
   display: flex;
   margin:0 auto;
   align-items:center;
   justify-content: space-between;
-  padding: 0 3rem 0 0rem;
+  /* padding: 0 3rem 0 0rem; */
   
   .nav_icon{
     display: none;

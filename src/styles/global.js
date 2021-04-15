@@ -87,7 +87,8 @@ export const GlobalStyles = createGlobalStyle`
       grid-template: 
             "b b a" auto
             "b b c" 2ch
-            "b b c" 1em / 20% 20px 1fr;
+            "b b c" 1em / 15% 20px 1fr;
+            
     }
 
 

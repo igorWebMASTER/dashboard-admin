@@ -33,15 +33,21 @@ export const ContentMenu = styled.div`
   text-align: left;
 
   transition: color 300ms;
+  
+  a{
+      text-decoration: none;
+      color: #fff;
+  }
+
+  svg{
+    color:#fff !important;
+  }
+
 
   .active-link{
     background:#3f4049;
     color:#DDE2FF;
     opacity: 0.8;
-
-    svg{
-      color:#fff !important;
-    }
   }
 
 

@@ -1,66 +1,15 @@
 import React from 'react';
-import MultiAxisLine from './Charts/main';
 
 import { 
     ContainerDashboard ,  
     ContentUsers , 
-    CardsInfoContainer, 
-    MainCharts
 } from './styles';
 
-function DashboardContent() {
+function RechargesContent() {
   return (
     <>
         <ContainerDashboard> 
-          <CardsInfoContainer>
-            <div>
-                <span>Recargas</span>
-                <span className="text-inner">60</span>
-            </div>
-            <div>
-                <span>Portabilidade</span>
-                <span className="text-inner">43</span>
-            </div>
-            <div>
-                <span>Ativações</span>
-                <span className="text-inner">16</span>
-            </div>
-            <div>
-                <span>Em espera</span>
-                <span className="text-inner">64</span>
-            </div>
-            </CardsInfoContainer>
-            <MainCharts >
-              <div className="chart-graph"> 
-                <h3>Tendências de hoje</h3>  
-                <p className="text-primary">de 05 Jan 2021, 09:41 AM</p>
-                <MultiAxisLine />
-              </div>
-              <div className="info-charts">
-                <div>
-                  <h4>Resolvido</h4>
-                  <span>449</span>
-                </div>
-                <div>
-                  <h4>Recebido</h4>
-                  <span>426</span>
-                </div>
-                <div>
-                  <h4>Média de tempo de retorno</h4>
-                  <span>33m</span>
-                </div>
-                <div>
-                  <h4>Média de resposta</h4>
-                  <span>3h 8m</span>
-                </div>
-                <div>
-                  <h4>Range de atuação</h4>
-                  <span>94%</span>
-                </div>
-              </div>
-            </MainCharts>
-
-            <ContentUsers>
+            {/* <ContentUsers>
               <div className="content-users-left">
                  <header>
                    <div>
@@ -130,7 +79,7 @@ function DashboardContent() {
                   </main>
                 
               </div>
-            </ContentUsers>
+            </ContentUsers> */}
 
 
             <ContentUsers>
@@ -153,4 +102,4 @@ function DashboardContent() {
   );
 }
 
-export default DashboardContent;
+export default RechargesContent;

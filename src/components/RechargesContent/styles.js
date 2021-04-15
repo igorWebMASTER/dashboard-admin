@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 export const ContainerDashboard = styled.div`
   grid-area:a;
-  height: 100%;
-  
+  height: 100%; 
+  margin-top: 3rem;
   
   span:first-of-type{
     font-size: 1.5rem;

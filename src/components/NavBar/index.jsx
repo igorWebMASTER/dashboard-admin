@@ -1,17 +1,18 @@
+import React from 'react'
 import {ContainerNavbar} from './style';
 import {FaBell, FaSearch, FaHamburger} from 'react-icons/fa';
 
 import AvatarMaker from '../../assets/AvatarMaker.svg';
-
-const Navbar = ({sidebarOpen, openMenuDashboard}) => {
+function Navbar ({title}){
     return (
+      <>
       <ContainerNavbar>
           {/* <div className={openMenuDashboard && 'block'} onClick={() =>  openMenuDashboard()}>
              <FaHamburger />
           </div> */}
 
           <div className="navbar__left">
-            <a href="#endregion">Overview</a>
+            <a href="#endregion">{title}</a>
             {/* <a href="@">Subscribers</a>
             <a href="@" className="active_link">Ativações</a> */}
           </div>
@@ -33,6 +34,7 @@ const Navbar = ({sidebarOpen, openMenuDashboard}) => {
             </a>
           </div>
       </ContainerNavbar>
+      </>
     )
 }
 

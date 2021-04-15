@@ -24,8 +24,10 @@ function Sidebar({sidebarOpen, closeSideBar} ) {
                 <a href=""> Dashboard</a>
             </div>
             <div className="sidebar__link">
-              <i className="fa fa-user-secret"></i>
-              <a href="">Admin</a>
+                <a href="">
+                 <i className="fa fa-user-secret"></i>
+                  Admin
+              </a>
             </div>
             <div className="sidebar__link">
               <i className="fa fa-building-to"></i>

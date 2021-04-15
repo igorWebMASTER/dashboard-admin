@@ -13,10 +13,14 @@ export default function index() {
         </div>
 
           <div className="active-link">
-            <AiFillPieChart color="#a5aaad"/><span>Overview</span>
+            <a href="/">   
+                <AiFillPieChart color="#a5aaad"/><span>Detalhes</span>
+            </a>
           </div>
           <div >
-            <FaTicketAlt color="#a5aaad"/> <img src="" alt=""/><span>Recargas</span>
+            <a href="/recharges">   
+                <FaTicketAlt color="#a5aaad"/> <img src="" alt=""/><span>Recargas</span>
+            </a>
           </div>
           <div>
             <FaAddressBook color="#a5aaad"/> <img src="" alt=""/><span>Portabilidade</span>
